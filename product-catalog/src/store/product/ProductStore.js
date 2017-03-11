@@ -4,10 +4,10 @@ class ProductStore {
     constructor() {
         this.productList = {};
 
-        this.productList[1] = (new Product(1, "SchwarzButter", 5, 0.5, 2, true, 20));
+        this.productList[1] = (new Product(1, "Butter", 5, 0.5, 2, true, 20));
         this.productList[2] = (new Product(2, "Gauda", 5, 0.7, 10, true, 10));
         this.productList[3] = (new Product(3, "Feta", 5, 1.5, 2, true, 50));
-        this.productList[4] = (new Product(4, "BulgarianCheese", 5, 0.5, 10, true, 50));
+        this.productList[4] = (new Product(4, "Cheese", 5, 0.5, 10, true, 50));
         this.productList[5] = (new Product(5, "Margarin", 5, 0.4, 1, false, 20));
         
         this.productList[6] = (new Product(6, "Samsung S7", 2, 2, 500, true, 20));
