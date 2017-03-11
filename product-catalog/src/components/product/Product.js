@@ -45,8 +45,8 @@ class Product extends Component {
 
              const product = prevState.product;
               product.inStock = product.inStock == randInt; 
-              product.inStock ? product.quamtity = MathUtility.getRandomInt(1, 50) : product.quamtity = 0;
-              
+              product.inStock ? product.quantity = MathUtility.getRandomInt(1, 50) : product.quantity = 0;
+
               return { 'product': product }});
     }
 
