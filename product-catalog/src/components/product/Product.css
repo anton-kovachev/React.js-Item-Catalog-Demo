@@ -1,0 +1,39 @@
+.Product-Name {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.Header-Name {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+h2 {
+    color:green;
+}
+
+.Product-Filter{
+    text-decoration: line-through;
+    color:red;
+}
+
+.Product-Cell {
+    border: 1px solid black;
+    width: 100px;
+
+}
+
+.Product-Row {
+    margin-top: 10px;
+}
+
+.Inline-Div {
+    display: inline-block;
+}
+
+.Product-Row-Size {
+    width: 50%;
+}

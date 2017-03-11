@@ -1,0 +1,12 @@
+.Available-Product-Row-Background {
+    background-color: green;
+}
+
+.UnAvailable-Product-Row-Background {
+    background-color: red;
+}
+
+.Product-Row-Position {
+    width: 700px;
+    margin-left: 285px;
+}
