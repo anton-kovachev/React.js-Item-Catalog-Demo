@@ -40,18 +40,6 @@ class Product extends Component {
    // }
 
     toogleStock() {
-        //sleep(2000);
-        
-        function sleep(milliseconds) {
-
-            var start = new Date().getTime();
-            for (var i = 0; i < 1e7; i++) {
-            if ((new Date().getTime() - start) > milliseconds){
-                break;
-            }
-            }
-        }
-
          this.setState( (prevState, props) => { 
              let randInt = MathUtility.getRandomInt(0,1);
              const product = prevState.product;
