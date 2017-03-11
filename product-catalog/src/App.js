@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Collapsible from 'react-collapsible';
-
 import ProductCatalog from './components/productCatalog/ProductCatalog';
-
 
 import logo from './logo.svg';
 import './App.css';
