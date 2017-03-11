@@ -42,8 +42,11 @@ class Product extends Component {
     toogleStock() {
          this.setState( (prevState, props) => { 
              let randInt = MathUtility.getRandomInt(0,1);
+
              const product = prevState.product;
               product.inStock = product.inStock == randInt; 
+              product.inStock ? product.quamtity = MathUtility.getRandomInt(1, 50) : product.quamtity = 0;
+              
               return { 'product': product }});
     }
 
