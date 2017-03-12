@@ -1,4 +1,6 @@
 # React.js-Item-Catalog-Demo
 Simple demo of React.js.
 </br>
-Just run npm start.
+1.Run npm install.
+</br>
+2. Run npm start.
