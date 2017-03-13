@@ -15,15 +15,15 @@ class ProductRow extends Component {
 
     render() {
         
-        let generateItemRow = function( propertyName, index ) 
+        let generateProductRow = function( propertyName, index ) 
         {
-            return  (<div  className={`Inline-Div Product-Cell Product-Name ${this.props.matchFilter ? '' : 'Product-Filter'} `} key={index} > {this.props.product[propertyName].toString() } </div>);
+            return  (<div className={`Inline-Div Product-Cell Product-Name ${this.props.matchFilter ? '' : 'Product-Filter'} `} key={index} > {this.props.product[propertyName].toString() } </div>);
         };
 
-        generateItemRow = generateItemRow.bind(this);
+        generateProductRow = generateProductRow.bind(this);
 
         return (   <div className={`Product-Row Product-Row-Position ${this.state.isInStock ? 'Available-Product-Row-Background' : 'UnAvailable-Product-Row-Background '}`}>
-                        {Object.keys(this.props.product).map(generateItemRow)}
+                        {Object.keys(this.props.product).map(generateProductRow)}
                     </div>
                 );
     }

@@ -13,12 +13,9 @@ class SearchBar extends Component {
     handleChange(e) {
         console.log(e.target.value);
         console.log(this.state.searchText);
-        //this.props.handleSearchBarInputText(e.target.value);
         this.props.handleSearchBarInputText(this.textInput.value);
     }
     
-
-
     render() {
         return ( 
             <div>

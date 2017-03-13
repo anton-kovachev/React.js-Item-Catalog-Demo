@@ -10,7 +10,6 @@ class ProductCatalog  extends Component  {
         super(props);
         this.state = { searchText: '', productIds: ProductStore.getAllProductIdsByCateogryId(parseInt(this.props.productCategoryId)) };
         this.handleSearchBarInputText = this.handleSearchBarInputText.bind(this);
-     
     }
     
     handleSearchBarInputText(searchText) {
@@ -19,12 +18,12 @@ class ProductCatalog  extends Component  {
 
     render() {
         
-//        const productIds = [1, 2, 3, 5];
        let products =  [];
 
         for(let i = 0; i < this.state.productIds.length; i++) {
             products.push(<Product productId={this.state.productIds[i]} searchText={this.state.searchText} key={i} />);
         }
+        
         return(
             <div>
                 <div>

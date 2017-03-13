@@ -27,8 +27,6 @@ class ProductStore {
     
     getAllProductsByCateogryId(categoryId) {
         var filteredProductsByCategory = []
-        // this.productList.filter(function(product, index) { return product.category === categoryId ?  true :  false; });
-
         
         var productKeys = Object.keys(this.productList);
         productKeys.forEach(function(key) {

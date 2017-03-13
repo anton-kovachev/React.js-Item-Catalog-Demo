@@ -14,7 +14,6 @@ class Product extends Component {
 
     componentWillMount() {
         const productId = parseInt(this.props.productId);
-        //const store = new ProductStore();
 
         let product =  ProductStore.getProductById(productId);
         this.setState({ 'product': product});
@@ -51,18 +50,20 @@ class Product extends Component {
     }
 
     componentWillReceiveProps(nextProps) {
+    
        let searchText = '';
        if (nextProps.searchText !== undefined || nextProps.searchText !== '') {
             searchText = nextProps.searchText.toLowerCase();
        }
 
-            if ( searchText !== '' && this.state.product.name.toLowerCase().includes(searchText) === false) {
-                this.setState({ 'matchFilter': false });
-            }
-            else 
-            {
-                this.setState({ 'matchFilter': true });
-            }
+        if ( searchText !== '' && this.state.product.name.toLowerCase().includes(searchText) === false) {
+            this.setState({ 'matchFilter': false });
+        }
+        else 
+        {
+            this.setState({ 'matchFilter': true });
+        }
+        
     };
 
     render() {
